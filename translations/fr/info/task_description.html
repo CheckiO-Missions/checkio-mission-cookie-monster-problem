@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Le bien-aimé <a target="_blank" href="https://en.wikipedia.org/wiki/Cookie_Monster">Cookie Monster</a> de la rue Sésame est tombé sur une table contenant des <code>piles de</code> biscuits triées, chaque pile étant un nombre entier positif. Cependant, l'obsession monomaniaque de <a target="_blank" href="https://en.wikipedia.org/wiki/Count_von_Count">the Count</a> qui a mis en place cette fiesta friable a récemment atteint un tout autre niveau de gravité. Le comte insiste sur le fait que ces biscuits doivent être mangés en un <strong>minimum de mouvements</strong>. Chaque coup choisit l'une des <strong>tailles de pile restantes</strong> <code>p</code>, et retire <code>p</code> biscuits de chaque pile contenant au moins <code>p</code> biscuits (éradiquant ainsi toutes les piles contenant exactement <code>p</code> biscuits), et laisse toutes les piles plus petites en l'état. 
+</p>
+
+<p style="text-align: justify;">
+    Comme le comte a une obsession malsaine pour l'ordre et les hiérarchies, il s'attend à ce que ces déplacements soient effectués dans l'<strong>ordre décroissant</strong> des valeurs de <code>p.</code> Cette fonction devrait renvoyer le tableau {% if is_js %}{% else %} liste{% endif %} de déplacements, qui permet à Cookie Monster d'engloutir ces biscuits. S'il existe plusieurs séquences optimales de déplacements, choisissez la <strong>plus grande d'un point de vue lexicographique</strong>. Regardez l'exemple pour l'entrée <code>[1, 2, 3, 4, 5, 6]</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cookie-monster.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p style="text-align: justify;">
+    La version ci-dessus du problème du monstre cuisinier a été quelque peu simplifiée afin que le problème soit suffisamment simple pour être résolu ici. La formulation plus générale du problème permet à Cookie Monster de choisir n'importe quel sous-ensemble de piles restantes et de retirer le même nombre de biscuits librement choisi de chaque pile du sous-ensemble choisi. Les étudiants intéressés peuvent consulter l'article <a target="_blank" href="https://arxiv.org/abs/1309.5985">“On the Cookie Monster Problem”</a> pour découvrir les subtiles complexités de la formulation générale du problème.
+</p>
+<p><i>La mission a été tirée de <span>Python CCPS 109</span>. Elle est enseignée pour <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
