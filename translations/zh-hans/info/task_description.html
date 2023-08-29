@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    芝麻街》中人见人爱的<a target="_blank" href="https://en.wikipedia.org/wiki/Cookie_Monster">Cookie Monster</a> 无意中发现了一张桌子，上面<code>堆满</code>了分类的饼干，每一堆都是一个正整数。然而，布置这场饼干盛宴的<a target="_blank" href="https://en.wikipedia.org/wiki/Count_von_Count">the Count</a> 的强迫症最近又升级到了一个全新的严重程度。伯爵坚持必须在<strong>尽可能少的步数</strong>内吃完这些饼干。每一步都要从<strong>剩下的一堆</strong>饼干中选择一个<strong>大小</strong>为<code>p</code> 的，然后从每一堆至少含有<code>p</code>个饼干的饼干中取出<code>p 个</code>饼干（这样就消灭了所有正好有<code>p 个</code>饼干的饼干堆），并让所有较小的饼干堆保持原样。 
+</p>
+
+<p style="text-align: justify;">
+    这个函数应该返回{% if is_js %}数组{% else %}移动列表{% endif %} ，这样 Cookie Monster 才能吃掉这些饼干。如果有几个最佳移动序列，则选择<strong>词典上最大</strong>的一个。请看输入<code>[1, 2, 3, 4, 5, 6]</code>的示例。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cookie-monster.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p style="text-align: justify;">
+    上述版本的饼干怪兽问题经过了一些精简，使问题简单到足以在此解决。在更一般的问题表述中，Cookie Monster 可以任意选择剩余饼干堆的子集，并从所选子集的每一堆中取出相同数量的饼干。有兴趣的学生可以查看文章<a target="_blank" href="https://arxiv.org/abs/1309.5985">“On the Cookie Monster Problem”</a> ，了解一般问题表述的微妙复杂性。
+</p>
+<p><i>该任务摘自<span>Python CCPS 109</span> 。它由<span>Ryerson Chang School of Continuing Education</span> 教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
