@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Ukochany <a target="_blank" href="https://en.wikipedia.org/wiki/Cookie_Monster">Cookie Monster</a> z Ulicy Sezamkowej natknął się na stół z posortowanymi <code>stosami</code> ciasteczek, z których każdy jest dodatnią liczbą całkowitą. Jednak monomaniakalna obsesja <a target="_blank" href="https://en.wikipedia.org/wiki/Count_von_Count">the Count</a>, który zorganizował tę kruchą fiestę, ostatnio wzrosła do zupełnie nowego poziomu surowości. Hrabia nalega, aby ciasteczka zostały zjedzone w <strong>jak najmniejszej liczbie ruchów</strong>. W każdym ruchu wybiera jeden z <strong>pozostałych rozmiarów stosu</strong> <code>p</code> i usuwa <code>p</code> ciasteczek z każdego stosu, który zawiera co najmniej <code>p</code> ciasteczek (eliminując w ten sposób wszystkie stosy zawierające dokładnie <code>p</code> ciasteczek), a wszystkie mniejsze stosy pozostawia bez zmian. 
+</p>
+
+<p style="text-align: justify;">
+    Ponieważ Hrabia ma również niezdrową obsesję na punkcie porządku i hierarchii, oczekuje, że ruchy te będą wykonywane w <strong>kolejności malejącej</strong> wartości <code>p</code>. Funkcja ta powinna zwracać tablicę {% if is_js %}{% else %} listę{% endif %} ruchów, która pozwoli Ciasteczkowemu Potworowi zjeść te ciasteczka. Jeśli istnieje kilka optymalnych sekwencji ruchów, proszę wybrać <strong>leksykograficznie największą</strong> z nich. Proszę spojrzeć na przykład dla danych wejściowych <code>[1, 2, 3, 4, 5, 6]</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cookie-monster.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> {% if is_js %}Tablica{% else %}Lista{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Dane wyjściowe:</strong> {% if is_js %}Tablica{% else %}Lista{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p style="text-align: justify;">
+    Powyższa wersja problemu Ciasteczkowego Potwora została nieco uproszczona, aby problem był wystarczająco prosty do rozwiązania. Bardziej ogólne sformułowanie problemu pozwala Ciasteczkowemu Potworowi wybrać dowolny podzbiór pozostałych stosów i usunąć taką samą dowolnie wybraną liczbę ciasteczek z każdego stosu w wybranym podzbiorze. Zainteresowani uczniowie mogą zapoznać się z artykułem <a target="_blank" href="https://arxiv.org/abs/1309.5985">“On the Cookie Monster Problem”</a> na temat subtelnych zawiłości ogólnego sformułowania problemu.
+</p>
+<p><i>Zadanie zostało zaczerpnięte ze strony <span>Python CCPS 109</span>. Jest ono nauczane na stronie <span>Ryerson Chang School of Continuing Education</span> przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
